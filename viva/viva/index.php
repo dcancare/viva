@@ -1,8 +1,6 @@
 <?php 
-session_start();
-include("library/class_email_sender.php");
+include("library/mail.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,7 +58,7 @@ include("library/class_email_sender.php");
     </section>
     <!-- Slogan end here -->
     <!-- Count Down start here -->
-    <section class="count-down-wrapper fade-down">
+</form>
       <ul class="row count-down">                       
         <li class="col-md-3 col-sm-6">   
           <input class="knob days" data-readonly=true data-min="0" data-max="365" data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#34aadc" data-bgColor="#e1e2e6" data-angleOffset="180">
@@ -84,7 +82,7 @@ include("library/class_email_sender.php");
     <!-- Newsletter start here -->
     <section class="newsletter row fade-down">      
       
-            <form  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="contact col-md-6 fade-down validate" target="_blank" novalidate>
+            <form  method="post" action="library/mail.php" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="contact col-md-6 fade-down validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll" class="form-group">
                 <div><span class="email-ico"> <i class="fa fa-envelope-o"></i> </span>
               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email here to stay tuned">          </div>
@@ -146,29 +144,7 @@ include("library/class_email_sender.php");
         
 
 
-        <!--Email Sending Script -->
 
-     <   <?php 
-      $name="";
-      $from="";
-      $message="";
-        if(isset($_POST['submit'])){
-
-          $name=mysql_real_escape_string($_POST['name']);
-          $from=mysql_real_escape_string($_POST['email']);
-          $message=mysql_real_escape_string($_POST['comments']);
-          $code=$_SESSION['captcha'];
-            $captcha=mysql_real_escape_string($_POST['captcha']);
-          $to="apkstreetballa23@aol.com"; // Add your e-mail here
-          if($code!=$captcha){
-      echo '<script>alert("Invalid Captcha");</script>';
-      }else{    
-          include("library/send_email.php");
-      }
-
-        //Isset finishes here 
-        }
-        ?>
 
 
         <!-- Email Sending Script-->
@@ -192,7 +168,7 @@ include("library/class_email_sender.php");
               </div>
               
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center columns">             
-                <button name="submit" id="submit" class="contact-btn-submit" type="submit">Send</button>
+                <button name="submit" id="submit" class="contact-btn-submit">Send</button>
               </div> 
             </form>        
         </div>
@@ -237,5 +213,3 @@ include("library/class_email_sender.php");
 <!-- Javascript framework and plugins end here -->
 </body>
 </html>
-
-
