@@ -1,5 +1,6 @@
 <?php
 require 'PHPMailer/PHPMailerAutoload.php';
+$email = $_REQUEST['EMAIL'];
 $mail = new PHPMailer();
 $mail->IsSMTP();  //telling the class to use SMTP
 $mail->isHTML(true);
@@ -13,7 +14,7 @@ $mail->setFrom("user1@vivacarnaval.com", "me");
 $mail->Subject      = "Test Email";
 $mail->addAddress("user1@vivacarnaval.com","me");
 $mail->addAddress("dcancare@mail.usf.edu", "me");
-$mail->Body     = 'Hi! This is my first e-mail sent through PHPMailer.';
+$mail->Body     = $email;
 $mail->SMTPDebug = 0;
 if(!$mail->send()) {
   echo 'Message was not sent.';
