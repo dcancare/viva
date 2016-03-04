@@ -1,0 +1,26 @@
+/* navbar */
+.navbar-inverse {
+    background-color: #000000;
+    border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand
+{
+	color: #fed136;
+	font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+	font-size: 25px;
+}
+
+.navbar-inverse .nav li a
+{
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 200;
+	color: white;
+	font-size: 15px;
+}
+
+.navbar-inverse .nav li a:hover
+{
+	color: #fed136;
+}

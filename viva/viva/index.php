@@ -21,13 +21,61 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="css/my.css" />
   <!-- CSS end here -->
   <!-- Google fonts start here -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
   <!-- Google fonts end here -->
+  <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- end custome fonts -->
 </head>
 <body class="ux">
+  <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Viva Carnaval</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a> -->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
   <div class="bg-overlay"></div>
   <!-- Preloader start here -->
   <div id="preloader">
@@ -55,7 +103,7 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     <!-- Logo end here -->
     <!-- Slogan start here -->
     <section class="slogan fade-down">
-      <h1>VIVA CARNAVAL</h1>     
+      
     </section>
     <!-- Slogan end here -->
     <!-- Count Down start here -->
@@ -198,9 +246,12 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
       </div>
     </div>
 
-<!-- Contact end here --> 
-    <!-- Main container start here -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
     <!-- Javascript framework and plugins start here -->
+    <!-- Plugin JavaScript -->
+    <!-- end plugin -->
     <script type="text/javascript" src="js/jquery.js"></script> 
     <script type="text/javascript" src="js/bootstrap.min.js"></script> 
     <script src="js/jquery.validate.min.js"></script>
@@ -210,6 +261,7 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     <script src="js/jquery.ccountdown.js"></script>
     <script src="js/general.js"></script>
     <script src="js/init.js"></script>
+    <script type="text/javascript" src="js/my.js"></script> 
         
 <!-- Javascript framework and plugins end here -->
 </body>

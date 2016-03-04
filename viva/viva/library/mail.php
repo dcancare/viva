@@ -8,19 +8,20 @@ $mail->Host         = localhost;//"smtpout.secureserver.net"; //also tried "rela
 $mail->WordWrap     = 50;
 //$mail->SMTPSecure   = "ssl";
 //$mail->Port         = 465;
-$mail->setFrom("user1@vivacarnaval.com", "me");
+$mail->setFrom("user1@vivacarnaval.com", "Viva");
 //$mail->Username     = "user1@vivacarnaval.com";
 //$mail->Password     = "vivaC2016";
-$mail->Subject      = "Test Email";
-$mail->addAddress("user1@vivacarnaval.com","me");
-$mail->addAddress("dcancare@mail.usf.edu", "me");
-$mail->Body     = $email;
+$mail->Subject      = "Subscriber To Viva";
+$mail->addAddress("vivacarnavaltampa@gmail.com","me");
+$mail->addAddress("apkstreetballa23@aol.com", "me");
+$mail->Body     = "New  subscriber " . $email;
 $mail->SMTPDebug = 0;
+header('Location: ../index.php');
 if(!$mail->send()) {
   echo 'Message was not sent.';
   echo 'Mailer error: ' . $mail->ErrorInfo;
 } else {
-  echo 'Message has been sent.';
+  echo 'Thank you, your email has been received.';
 }
 
 ?>
