@@ -52,13 +52,13 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- <li class="hidden">
+                    <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                    <li> 
+                        <a href="#" class="page-scroll" data-toggle="modal" data-target=".bs-example-modal-lg">About</a>
                     </li>
-                    <li>
+                   <!--  <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
@@ -68,8 +68,8 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a> -->
-                    </li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -83,9 +83,9 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
   </div>
   <!-- Preloader end here -->
 <!-- About Icon start here -->
-  <div class="about-us"> 
+  <!-- <div class="about-us"> 
     <a href="#" class="fa fa-file-text-o tool-tip" data-toggle="modal" data-target=".bs-example-modal-lg" data-placement="right" title="About"></a>
-  </div>
+  </div> -->
 <!-- About Icon end here -->  
 <!-- Contact Icon start here -->
   <div class="contact-us"> 
@@ -108,7 +108,7 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     <!-- Slogan end here -->
     <!-- Count Down start here -->
 </form>
-      <ul class="row count-down">                       
+      <ul class="row count-down white-font">                       
         <li class="col-md-3 col-sm-6">   
           <input class="knob days" data-readonly=true data-min="0" data-max="365" data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#34aadc" data-bgColor="#e1e2e6" data-angleOffset="180">
           <span id="days-title">days</span>
@@ -132,6 +132,7 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     <section class="newsletter row fade-down">      
       
             <form  method="post" action="library/mail.php" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="contact col-md-6 fade-down validate" target="_blank" novalidate>
+            
             <div id="mc_embed_signup_scroll" class="form-group">
                 <div><span class="email-ico"> <i class="fa fa-envelope-o"></i> </span>
               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email here to stay tuned">          </div>
@@ -184,69 +185,7 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     </div>
   </div>
 <!-- About end here -->
-<!-- Contact start here -->
-  <div class="modal fade bs-example-modal-lg2" role="dialog" aria-hidden="true" data-keyboard="true" data-backdrop="static" tabindex="-1">
-    <a href="#" class="fa fa-times cls-pop" data-dismiss="modal"></a>
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content pop-up pop-up-cnt">
-        <h3>Contact us</h3>
         
-
-
-
-
-
-        <!-- Email Sending Script-->
-
-        <div class="clearfix cnt-wrap">
-         <form id="contactform" name="contactform" action="" method="post">
-          <div id="result"></div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 columns">
-                <input type="text" id="name" placeholder="Name" name="name" value="<?php echo $name;?>" required>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 columns">
-                <input type="text"  id="email" placeholder="Email" name="email" value="<?php echo $from;?>" required>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 columns">
-                <textarea id="comments" name="comments" placeholder="Message" required><?php echo $message;?></textarea>
-              </div>
-               
-               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 columns captcha text-center">
-           <img src="captcha.php"><br>
-                   <input type="text" name="captcha" placeholder="captcha"required>                
-              </div>
-              
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center columns">             
-                <button name="submit" id="submit" class="contact-btn-submit">Send</button>
-              </div> 
-            </form>        
-        </div>
-
-
-        <div class="clearfix cnt-wrap">
-          <div class="col-md-4 col-sm-4">
-            <i class="fa fa-phone"></i>
-            <h4>Phone</h4>
-            <p>Phone: (000) 555 1212</p>
-          </div>
-
-          <div class="col-md-4 col-sm-4">      
-            <i class="fa fa-envelope-o"></i>
-            <h4>Email</h4>
-            <p>vivacarnaval@gmail.com</p>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <i class="fa fa-map-marker"></i>
-            <h4>Address</h4>
-            <p>Tampa FL <br>
-            </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Javascript framework and plugins start here -->
