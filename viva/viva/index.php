@@ -9,6 +9,7 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Viva Carnaval</title>
+
     
     <!-- Favicons -->
     <!-- <link rel="shortcut icon" href="favicon.ico"> -->
@@ -33,6 +34,8 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <!-- end custome fonts -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
 </head>
 <body class="ux">
   <!-- Navigation -->
@@ -56,7 +59,10 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
                         <a href="#page-top"></a>
                     </li>
                     <li> 
-                        <a href="#" class="page-scroll" data-toggle="modal" data-target=".bs-example-modal-lg">About</a>
+                        <a href="#" class="page-scroll" data-toggle="modal" data-target="#aboutModal">About</a>
+                    </li>
+                    <li> 
+                        <a href="#" class="page-scroll" data-toggle="modal" data-target="#hotelModal">Hotel</a>
                     </li>
                    <!--  <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
@@ -76,11 +82,13 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
         </div>
         <!-- /.container-fluid -->
     </nav>
+
   <div class="bg-overlay"></div>
   <!-- Preloader start here -->
   <div id="preloader">
     <div id="status"></div>
   </div>
+
   <!-- Preloader end here -->
 <!-- About Icon start here -->
   <!-- <div class="about-us"> 
@@ -105,9 +113,10 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     <section class="slogan fade-down">
       
     </section>
+
     <!-- Slogan end here -->
     <!-- Count Down start here -->
-</form>
+
       <ul class="row count-down white-font">                       
         <li class="col-md-3 col-sm-6">   
           <input class="knob days" data-readonly=true data-min="0" data-max="365" data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#34aadc" data-bgColor="#e1e2e6" data-angleOffset="180">
@@ -161,7 +170,7 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     <!-- Footer end here -->
   </section>
 <!-- About start here -->
-  <div class="modal fade bs-example-modal-lg" role="dialog" aria-hidden="true" data-keyboard="true" data-backdrop="static" tabindex="-1">
+  <div id="aboutModal" class="modal fade" role="dialog" aria-hidden="true" data-keyboard="true" data-backdrop="static" tabindex="-1">
     <a href="#" class="fa fa-times cls-pop" data-dismiss="modal"></a>
     <div class="modal-dialog modal-lg clearfix">
       <div class="modal-content pop-up">
@@ -185,12 +194,44 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     </div>
   </div>
 <!-- About end here -->
-        
+<!-- Hotel start here -->
+  <div id="hotelModal" class="modal fade" role="dialog" aria-hidden="true" data-keyboard="true" data-backdrop="static" tabindex="-1">
+    <a href="#" class="fa fa-times cls-pop" data-dismiss="modal"></a>
+    <div class="modal-dialog modal-lg clearfix">
+      <div class="modal-content pop-up">
+        <h3>Hotel Info</h3>
+    <div class="row col-md-12 col-sm-6">
+      <div class="col-md-6 col-sm-6">
+        <a  href="http://www.vistainntampa.com">
+          <img src="img/vista.jpg" class="img-responsive img-rounded" alt="Vista Inn">
+        </a>
+      </div>
+      <div class="col-md-6 col-sm-6">
+          <p><b>Vista Inn</b> is the official hotel for Viva this year.</p>
+          <p>*When reserving a room, be sure to mention that the group name is <b>"Viva"</b>.</p>
+          <p><b>Address:</b> 400 E Bearss Ave, Tampa, FL 33613.</p>
+          <p><b>Phone:</b> (813) 961-1000</p>
+          <div id="gmap_canvas" class="img-responsive img-rounded" style="width:500px;height:280px;"></div>
+      </div>
+     <div class="col-md-6 col-sm-6">
+      <a class="btn btn-primary" style="margin-top:15px;" href="http://www.vistainntampa.com" role="button">Book Now</a>
+    </div>
+     <div class="col-md-6 col-sm-6">
+      <a  style="margin-top:15px;" href="#"</a>
+     </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<!-- Hotel end here -->
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Javascript framework and plugins start here -->
     <!-- Plugin JavaScript -->
     <!-- end plugin -->
+  
+
     <script type="text/javascript" src="js/jquery.js"></script> 
     <script type="text/javascript" src="js/bootstrap.min.js"></script> 
     <script src="js/jquery.validate.min.js"></script>
@@ -201,6 +242,18 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     <script src="js/general.js"></script>
     <script src="js/init.js"></script>
     <script type="text/javascript" src="js/my.js"></script> 
+
+
+<script type="text/javascript"> 
+function init_map(){
+  var myOptions = {
+    zoom:12,
+    center:new google.maps.LatLng(28.088934,-82.4570175),
+    mapTypeId: google.maps.MapTypeId.ROADMAP};
+    map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+    marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(28.088934, -82.4570175)});
+    infowindow = new google.maps.InfoWindow({content:"<b>Vista Inn and Suites </b><br/>400 E Bearss Ave<br/>33613 Tampa, FL" });
+    google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});}google.maps.event.addDomListener(window, 'load', init_map);</script>
         
 <!-- Javascript framework and plugins end here -->
 </body>
