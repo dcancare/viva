@@ -64,6 +64,9 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
                     <li> 
                         <a href="#" class="page-scroll" data-toggle="modal" data-target="#hotelModal">Hotel</a>
                     </li>
+                     <li> 
+                        <a href="#" class="page-scroll" data-toggle="modal" data-target="#itinModal">Itinerary</a>
+                    </li>
                    <!--  <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
@@ -208,7 +211,7 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
       </div>
       <div class="col-md-6 col-sm-6">
           <p><b>Vista Inn</b> is the official hotel for Viva this year.</p>
-          <p>*When reserving a room, be sure to mention that the group name is <b>"Viva"</b>.</p>
+          <p>*$55.00 room rate when you use "Viva" as the group. <b>"Viva"</b>.</p>
           <p><b>Address:</b> 400 E Bearss Ave, Tampa, FL 33613.</p>
           <p><b>Phone:</b> (813) 961-1000</p>
           <div id="gmap_canvas" class="img-responsive img-rounded" style="width:500px;height:280px;"></div>
@@ -224,6 +227,25 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
   </div>
   </div>
 <!-- Hotel end here -->
+<!-- Itinerary start here -->
+  <div id="itinModal" class="modal fade" role="dialog" aria-hidden="true" data-keyboard="true" data-backdrop="static" tabindex="-1">
+    <a href="#" class="fa fa-times cls-pop" data-dismiss="modal"></a>
+    <div class="modal-dialog modal-lg clearfix">
+      <div class="modal-content pop-up">
+        <h3>Itinerary</h3>
+        <div class="clearfix">
+         <div class="row col-md-12 col-sm-12">
+          <div class="col-md-12 col-sm-12">
+             <h2>Friday</h2>
+          </div>
+          <div class="col-md-12 col-sm-12">
+             <h2>Saturday</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Itinerary end here -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
