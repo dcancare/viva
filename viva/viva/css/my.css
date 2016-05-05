@@ -35,3 +35,22 @@
   padding: 0;
   height: 100%;
 }
+.pop-up h2  
+{
+	font-size: 22px;
+	line-height: 26px;
+	color: #cebfff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	position: relative;
+}
+.pop-up b i
+{
+color: #82fdff;
+}
+
+.pop-up .hash
+{
+	color: #ff7553;
+}

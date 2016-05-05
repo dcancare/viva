@@ -233,13 +233,43 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
     <div class="modal-dialog modal-lg clearfix">
       <div class="modal-content pop-up">
         <h3>Itinerary</h3>
+        <br></br>
         <div class="clearfix">
          <div class="row col-md-12 col-sm-12">
           <div class="col-md-12 col-sm-12">
-             <h2>Friday</h2>
+             <h2>Thursday Night</h2>
+             <p><b><i>Welcome Back Pre-Party</b></i></p>
+             <p>THE CARNAVAL STARTS HERE! </p>
+             <br></br>
           </div>
           <div class="col-md-12 col-sm-12">
+             <h2>Friday</h2>
+             <p><b><i>Registration by the Pool</i></b></p>
+             <p>Get your wrist band and <b>SWAG</b> bag (Souvenirs) for the hottest Labor Day Weekend party while you chill out by the pool, enjoy the company and plan out your weekend.</p>
+             <p class="hash">#VivaCarnavalWeekend</p>
+             <p><b><i>Welcome to VIVA CARNAVAL'S 1st Party</b></i></p>
+             <p>The opening night and welcome to Florida. Viva will showcase our beautiful Tampa night skyline in the downtown area. Maybe it will be relaxed? Like a meet and greet.</p>
+             <p>Or maybe it will be crazy? Like a foam party...who knows? But get ready for one hell of a weekend.</p>
+             <br></br>
+          </div>
+           <div class="col-md-12 col-sm-12">
              <h2>Saturday</h2>
+             <p><b><i>Beach Day</b></i></p>
+             <p>We are taking the <b>CARNAVAL</b> outside, with the traditional #CarnavalBeachDay. Be transported by us and enjoy the sun, sand, food, and music. But don't forget</p>
+             <p>protection...or you might just get burned.</p>
+             <p><b><i>Latin Caribbean Moon Party</b></i></p>
+             <p>Our newest and most aesthetically inclined evening. Ever party under the moon with sand at your feet? Get Ready</p>
+             <p class="hash">#VivaMoonParty</p>
+             <br></br>
+          </div>
+           <div class="col-md-12 col-sm-12">
+             <h2>Sunday</h2>
+             <p><b><i>Headphone Day Party</b></i></p>
+             <p>The party goes under the lights in the craziest <span class="hash">#CarnavalHeadPhoneParty</span> you have ever seen.</p>
+             <p>3 DJ's, 1 Set of headphones, 1 Party...ENDLESS POSSIBILITIES</p>
+             <p><b><i>Pajama Party</b></i></p>
+             <p><b>ITS BACK!</b> You can't have a Labor Day Weekend in Tampa without the <span class="hash">#VivaCarnavalPajamaJam</span>. Close out your <span class="hash">#VivaCarnavalWeekend </span> the traditional way, with the INFAMOUS Pajama Party, but this time we will add some.</p>
+             <p>YOU KNOW WE HAD TO SAVE THE BEST FOR LAST!</p>
           </div>
         </div>
       </div>
