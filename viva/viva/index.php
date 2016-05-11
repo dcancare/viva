@@ -268,8 +268,9 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
              <p>The party goes under the lights in the craziest <span class="hash">#CarnavalHeadPhoneParty</span> you have ever seen.</p>
              <p>3 DJ's, 1 Set of headphones, 1 Party...ENDLESS POSSIBILITIES</p>
              <p><b><i>Pajama Party</b></i></p>
-             <p><b>ITS BACK!</b> You can't have a Labor Day Weekend in Tampa without the <span class="hash">#VivaCarnavalPajamaJam</span>. Close out your <span class="hash">#VivaCarnavalWeekend </span> the traditional way, with the INFAMOUS Pajama Party, but this time we will add some.</p>
+             <p><b>ITS BACK!</b> You can't have a Labor Day Weekend in Tampa without the <span class="hash">#VivaCarnavalPajamaJam</span>. Close out your <span class="hash">#VivaCarnavalWeekend </span> the traditional way, with the INFAMOUS Pajama Party!</p>
              <p>YOU KNOW WE HAD TO SAVE THE BEST FOR LAST!</p>
+             <p>******PACKAGES ON SALE STARTING IN JUNE******</p>
           </div>
         </div>
       </div>
