@@ -292,7 +292,7 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
           <p></p>
         </div>
       </div>
-  <ul class="features-package">      
+  <ul class="features">      
       <li>Registration @ Hotel with Souvenirs</li>
       <li>Viva Night Soiree</li>
       <li>Transportation to Beach Trip</li>
