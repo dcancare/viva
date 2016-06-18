@@ -448,6 +448,19 @@ footer a:hover {
     width: 33%;
     float: left;
 }
+.features-package{
+    margin: 20px 0 0 0;
+    padding: 0 0 0 14px;
+}
+.features-package li {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 28px;
+    color: #dadada;
+    width: 33%;
+    float: left;
+}
 .gmap {
     margin: 20px 0;
     position: relative;

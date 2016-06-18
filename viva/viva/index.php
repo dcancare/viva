@@ -67,6 +67,9 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
                      <li> 
                         <a href="#" class="page-scroll" data-toggle="modal" data-target="#itinModal">Itinerary</a>
                     </li>
+                     <li> 
+                        <a href="#" class="page-scroll" data-toggle="modal" data-target="#packagesModal">Packages</a>
+                    </li>
                    <!--  <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
@@ -188,7 +191,6 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
 <ul class="features">      
       <li>Networking Opportunities</li>
       <li>A Great Time</li>
-      <li>Community Service</li>
       <li>Non stop Music</li>
       <li>Sunny Beaches</li>
       <li>Life Long Memories</li>
@@ -270,20 +272,54 @@ require 'library/PHPMailer/PHPMailerAutoload.php';
              <p><b><i>Pajama Party</b></i></p>
              <p><b>ITS BACK!</b> You can't have a Labor Day Weekend in Tampa without the <span class="hash">#VivaCarnavalPajamaJam</span>. Close out your <span class="hash">#VivaCarnavalWeekend </span> the traditional way, with the INFAMOUS Pajama Party!</p>
              <p>YOU KNOW WE HAD TO SAVE THE BEST FOR LAST!</p>
-             <p>******PACKAGES ON SALE STARTING IN JUNE******</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-<!-- Itinerary end here -->
+</div>
+  <!-- Itinerary end here -->
+<!-- Packages start here -->
+  <div id="packagesModal" class="modal fade" role="dialog" aria-hidden="true" data-keyboard="true" data-backdrop="static" tabindex="-1">
+    <a href="#" class="fa fa-times cls-pop" data-dismiss="modal"></a>
+    <div class="modal-dialog modal-lg clearfix">
+      <div class="modal-content pop-up">
+        <h3>PACKAGE</h3>
+        <div class="clearfix">
+        <div>
+          <p>Viva packages are starting at $67.25 (the price will increase each month) and will include access to the following:</p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+  <ul class="features-package">      
+      <li>Registration @ Hotel with Souvenirs</li>
+      <li>Viva Night Soiree</li>
+      <li>Transportation to Beach Trip</li>
+      <li>Latin Caribbean Night Party</li>
+      <li>Sunday Day Party</li>
+      <li>Pajama Jam</li>
+    </ul>  
+
+      <div class="col-xs-4 col-xs-offset-4" style="margin-top : 50px;">
+         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+           <input type="hidden" name="cmd" value="_s-xclick">
+           <input type="hidden" name="hosted_button_id" value="QLRF9B2PQA7Q2">
+           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+         </form>  
+      </div>
+
+      </div>  
+    </div> 
+  </div>
+  <!-- Packages end here -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Javascript framework and plugins start here -->
     <!-- Plugin JavaScript -->
     <!-- end plugin -->
-  
 
     <script type="text/javascript" src="js/jquery.js"></script> 
     <script type="text/javascript" src="js/bootstrap.min.js"></script> 
